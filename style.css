@@ -1,0 +1,458 @@
+/** ############################### Tried to maintain the CSS Specificity Hierarchy ############################### **/
+
+/** Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+/** Global Style Rule */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    max-width: 1240px;
+    margin: auto;
+}
+
+main {
+    background-color: #F8EDE3;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/** ###############################  Top head and nav-bar ###############################  **/
+.top-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.top-heading h2 {
+    font-family: "poppins", sans-serif;
+    font-size: 24px;
+    color: #3a3a3a;
+}
+
+nav.nav-bar>ul>li {
+    display: inline;
+    margin-left: 18px;
+    list-style: none;
+}
+
+nav.nav-bar>ul>li>a {
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #3a3a3a;
+}
+
+/** ###############################  Top banner part ############################### **/
+.top-banner {
+    display: flex;
+    align-items: center;
+    height: 575px;
+
+}
+
+.top-banner-text {
+    width: 60%;
+}
+
+.top-image {
+    width: 40%;
+}
+
+.top-banner-text h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 52px;
+    color: #3a3a3a;
+    line-height: 68px;
+}
+
+.top-banner-text p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3a3a3a;
+    width: 75%;
+    margin-bottom: 45px;
+    margin-top: 15px;
+}
+
+.top-banner-text a {
+    text-decoration: none;
+    background-color: #e02c6d;
+    padding: 8px 25px;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+.top-banner-text a:hover {
+    padding: 8px 25px;
+    border: 3px solid #e02c6d;
+    color: #000;
+    background-color: transparent;
+    transition: .3s ease-in-out;
+
+}
+
+.dslr-pic {
+    background-image: url(resources/images/Circle-design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.dslr-pic img {
+    animation: heartbeat 0.7s ease-in-out 0s infinite;
+    animation-play-state: running;
+}
+
+
+
+/** ###############################  Website Logo Styles ###############################  **/
+.website-logo {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    justify-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.137);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 10px 0;
+}
+
+/** ###############################  collection-part-Styles ############################### **/
+.collection-section {
+    margin: 100px 0 100px 0;
+}
+
+.collection-section h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #3a3a3a;
+    margin-bottom: 35px;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+    column-gap: 50px;
+    justify-content: space-around;
+}
+
+/* Product Item */
+
+.collection-cards {
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.collection-cards img {
+    width: 100%;
+}
+
+.collection-cards h2 {
+    font-weight: 500;
+    font-size: 28px;
+    color: #18191f;
+    line-height: 40px;
+    margin: 16px 0 6px 0;
+}
+
+.collection-cards h3 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 24px;
+    color: #000;
+    font-weight: 400;
+}
+
+.fa-star,
+.fa-star-half-alt {
+    font-size: 16px;
+    color: orange;
+
+}
+
+.collection-cards p {
+    width: 80%;
+    size: 14px;
+    font-family: "poppins", sans-serif;
+    padding-bottom: 15px;
+}
+
+.see-more-button {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #e02c6d;
+    font-weight: 700;
+    font-size: 16px;
+    float: right;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+.see-more-button:hover {
+    padding: 8px 25px;
+    border: 3px solid #e02c6d;
+    color: #000;
+    background-color: transparent;
+    transition: .3s ease-in-out;
+
+}
+
+
+.bottom-part {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10em;
+}
+
+.bottom-iframe {
+
+    float: left;
+    padding: 1.5em;
+
+}
+
+.bottom-text {
+    float: left;
+    padding: 2em;
+    width: 75%;
+    margin-bottom: 45px;
+
+}
+
+.bottom-text p {
+    margin-bottom: 2.5em;
+}
+
+.bottom-button {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #e02c6d;
+    font-weight: 700;
+    font-size: 16px;
+    float: right;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+.bottom-button:hover {
+    padding: 8px 25px;
+    border: 3px solid #e02c6d;
+    color: #000;
+    background-color: transparent;
+    transition: .3s ease-in-out;
+
+}
+
+/** ############################### Footer Styles ###############################  **/
+.footer-area {
+    background-color: #798777;
+    text-align: center;
+    height: 16em;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding-bottom: 2em;
+}
+
+.footer-area h3 {
+    color: #F8EDE3;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 2.3em;
+    padding: 3.5em 0 .5em 0;
+}
+
+#copyright-text {
+    font-size: 1em;
+    font-weight: 400;
+    color: #F8EDE3;
+    padding-bottom: 8px;
+}
+
+.fab {
+    color: #fff;
+    background-color: #ffffff4b;
+    padding: 10px;
+    border-radius: 17px;
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.fab:hover {
+    background-color: #e02c6d;
+    transition: 1s ease;
+}
+
+/** ###############################  Mobile devices Responsive  Styles ###############################  **/
+
+@media only screen and (max-width: 480px) {
+    body {
+        width: 95%;
+    }
+
+    /* Header Area */
+
+    .nav-bar {
+        display: none;
+    }
+
+    .top-heading h2 {
+        text-align: center;
+    }
+
+    header.top-head {
+        display: block;
+        padding: 10px;
+    }
+
+    /* Banner Area */
+    section.top-banner {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .top-banner-text,
+    .top-image {
+        width: 100%;
+    }
+
+    .top-image {
+        padding: 25px;
+    }
+
+    .top-banner-text h1 {
+        text-align: center;
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .top-banner-text p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .top-banner-text a {
+        margin-left: 23%;
+    }
+
+    .dslr-pic img {
+        width: 100%;
+        align-items: center;
+    }
+
+    /* Brand Logo */
+    section.website-logo {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 35px;
+        padding: 15px 0;
+        text-align: center;
+        row-gap: 15px;
+    }
+
+    img.svg-logos {
+        width: 75%;
+    }
+
+    /* Product Area */
+    section.collection-section {
+        margin-top: 50px;
+    }
+
+    .grid-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+        justify-content: space-around;
+    }
+
+    /* Bottom Area */
+
+    .bottom-part {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+        margin-bottom: 45px;
+    }
+}
+
+/** ###############################  Tablet responsive Styles ###############################  */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        width: 95%;
+    }
+
+    /* Banner Area */
+    .top-banner-text h1 {
+        font-size: 25px;
+        line-height: 45px;
+    }
+
+    .top-banner {
+        height: 370px;
+    }
+
+    .dslr-pic img {
+        width: 100%;
+    }
+
+    /* Brand Logo */
+    .website-logo {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 68px;
+    }
+
+    /* Product Area */
+    .grid-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        justify-content: space-around;
+    }
+
+    /* Bottom iframe Area */
+    .bottom-part {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    body {
+        width: 95%;
+    }
+
+    .top-banner-text h1 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .dslr-pic img {
+        width: 100%;
+    }
+}
+
+/** ###############################  Responsive Styles Ends ###############################  **/
